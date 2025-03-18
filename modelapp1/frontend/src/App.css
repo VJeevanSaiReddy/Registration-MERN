@@ -1,0 +1,109 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffedd5; /* Light warm tone */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+nav {
+  width: 100%;
+  background-color: #ff8c00; /* Saffron */
+  padding: 15px 0;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Enhancing Containers with Indian Art Motifs */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  border: 3px solid #ffa500; /* Vibrant border */
+  position: relative;
+}
+
+/* Rangoli-inspired decorative corners */
+.container::before,
+.container::after {
+  content: '\2726';
+  font-size: 50px;
+  color: #ff4500; /* Deep saffron */
+  position: absolute;
+}
+
+.container::before {
+  top: -15px;
+  left: -15px;
+}
+
+.container::after {
+  bottom: -15px;
+  right: -15px;
+}
+
+.search-bar {
+  padding: 10px;
+  width: 60%;
+  border: 2px solid #ff4500;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #d4a373;
+  padding: 14px;
+  text-align: left;
+}
+
+th {
+  background-color: #ff8c00;
+  color: white;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #ffebcd;
+}
+
+tr:hover {
+  background-color: #f5b971;
+  transition: background-color 0.3s ease;
+}
